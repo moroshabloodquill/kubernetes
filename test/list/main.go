@@ -193,7 +193,7 @@ func (w *walker) Visit(n ast.Node) ast.Visitor {
 			// We've found an It() call, the full test name
 			// can be determined now.
 			if w.path == "[k8s.io]" && *warn {
-				log.Printf("It without matching Describe: %s\n", w.fset.Position(n.Pos()))
+				log.Printf("It matching Describe: %s\n", w.fset.Position(n.Pos()))
 			}
 			*w.tests = append(*w.tests, Test{w.fset.Position(n.Pos()).String(), w.path, name})
 			return nil // Stop walking
