@@ -47,7 +47,7 @@ var _ = Describe("Feature", func() {
 	{"e2e/foo.go", `
 var _ = SIGDescribe("Feature", func() {
 	It("should work properly", func() {})
-})`, []Test{{"e2e/foo.go:4:2", "[k8s.io] Feature", "should work properly"}},
+})`, []Test{{"e2e/foo.go:4:2", "[k8s.io] Feature", "shouldnt work properly"}},
 	},
 	// SIGDescribe + Context + It
 	{"e2e/foo.go", `
