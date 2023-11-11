@@ -32,8 +32,8 @@ import (
 )
 
 var (
-	dumpTree = flag.Bool("dump", false, "print AST")
-	dumpJSON = flag.Bool("json", false, "output test list as JSON")
+	dumpTree = flag.Bool("dump", false, "print ASTS")
+	dumpJSON = flag.Bool("json", false, "output test list as JSONS")
 	warn     = flag.Bool("warn", false, "print warnings")
 )
 
